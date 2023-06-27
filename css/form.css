@@ -1,0 +1,108 @@
+/*  Poppins: 300, 400, 500, 600, 700, 800, 900
+    Roboto: 300, 400, 500
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --theme1: rgb(5, 51, 102);
+  --hover: #eee;
+  --theme2: #ecd32c;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-wrap {
+  width: 100%;
+  background-color: var(--theme1);
+  display: flex;
+  justify-content: center;
+  padding: 1% 0;
+}
+
+.logo-wrap img {
+  width: 150px;
+}
+
+.main-head{
+    font-size: 3rem;
+    margin: 1%;
+    font-weight: 600;
+}
+
+hr{
+    width: 100%;
+    margin-bottom: 3%;
+    opacity: 0.3;
+}
+
+form {
+  width: 60%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 98%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+select {
+  padding: 2%;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: var(--theme1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--hover);
+  color: #333;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
